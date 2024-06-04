@@ -16,13 +16,14 @@ export default function RegisterInput () {
     })
 
     setError(error)
-
     if (!error) {
       setEmail('')
       setPassword('')
+      alert('Register success! confirm your email to activate your account!')
 
       navigate('/login')
     }
+    alert(error.message)
   }
   return (
     <>
@@ -38,7 +39,7 @@ export default function RegisterInput () {
             <div className="pb-2">
                 <label className="block mb-2 text-sm font-medium text-[#ffff]">Email</label>
                 <div className="relative text-gray-400">
-                    <input type="email" name="email" id="email" className="text-[#ffff] bg-[#515F96] sm:text-md focus:outline-none inline-block w-full p-2.5 py-3 px-4" placeholder="name@company.com"
+                    <input type="email" name="email" id="email" className="text-[#ffff] bg-[#515F96] sm:text-md focus:outline-none inline-block w-full p-2.5 py-3 px-4 placeholder-[#c2c2c2]" placeholder="name@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}/>
                     {error?.message === 'user already registered' && (
@@ -50,7 +51,7 @@ export default function RegisterInput () {
             <div className="pb-6">
                 <label className="block mb-2 text-sm font-medium text-[#ffff]">Password</label>
                 <div className="relative text-gray-400">
-                    <input type="password" name="password" id="password" placeholder="••••••••••" className="text-[#ffff] bg-[#515F96] sm:text-md focus:outline-none inline-block w-full p-2.5 py-3 px-4"
+                    <input type="password" name="password" id="password" placeholder="••••••••••" className="text-[#ffff] bg-[#515F96] sm:text-md focus:outline-none inline-block w-full p-2.5 py-3 px-4 placeholder-[#c2c2c2]"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}/>
                     <hr className='h-0.5 bg-[#ffff]'/>
