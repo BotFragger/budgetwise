@@ -11,7 +11,7 @@ export default function Footer () {
               <a href="" className="flex items-center">
                 <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">BudgetWise</span>
               </a>
-              <div className="flex gap-3 align-middle justify-center mt-0">
+              {/* <div className="flex gap-3 align-middle justify-center mt-0">
                 <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                   <FaFacebook className='fill-[#F4D35E] text-3xl'/>
                   <span className="sr-only">Facebook page</span>
@@ -24,7 +24,7 @@ export default function Footer () {
                   <FaTwitter className='fill-[#F4D35E] text-3xl'/>
                   <span className="sr-only">Twitter page</span>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
@@ -57,10 +57,10 @@ export default function Footer () {
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div className="flex items-center justify-center">
-            <span className="text-sm text-white text-center">© 2023 <a href="" className="hover:underline">BudgetWise</a>. All Rights Reserved.
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-white">© 2023 <a href="" className="hover:underline">BudgetWise</a>. All Rights Reserved.
             </span>
-            {/* <div className="flex mt-4 gap-3 sm:justify-center sm:mt-0">
+            <div className="flex mt-4 gap-3 sm:justify-center sm:mt-0">
               <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                 <FaFacebook className='fill-[#F4D35E] text-3xl'/>
                 <span className="sr-only">Facebook page</span>
@@ -73,7 +73,7 @@ export default function Footer () {
                 <FaTwitter className='fill-[#F4D35E] text-3xl'/>
                 <span className="sr-only">Twitter page</span>
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </footer>
