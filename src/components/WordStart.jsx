@@ -1,10 +1,10 @@
-import React from 'react';
-import TombolNext from '../components/TombolNext';
+import React from 'react'
+import TombolNext from '../components/TombolNext'
 
 const WordStart = () => {
   return (
     <div className="flex items-start justify-center min-h-screen bg-krem">
-      <div className="relative w-[1005px] h-[595px] bg-[#FFFEFE] rounded-[30px]">
+      <div className="relative w-[1005px] h-[595px] bg-[#FFFEFE] rounded-[30px] shadow-lg">
         <div className="absolute top-0 w-[910px] h-[500px] bg-[#F4D35E] rounded-[30px] mt-0 ml-[47.5px] p-8 flex flex-col justify-center items-center text-center">
           <h1 className="text-2xl font-bold mb-4">Selamat Datang di BudgetWise!</h1>
           <p className="mb-2">
@@ -28,7 +28,7 @@ const WordStart = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default WordStart;
+export default WordStart

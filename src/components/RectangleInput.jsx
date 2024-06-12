@@ -32,7 +32,7 @@ const RectangleInput = () => {
             border: '2px solid #515F96' // Add border with specified color
           }}
         >
-          <span className="text-[16px] font-poppins">Example Text</span>
+          <span className="text-lg font-poppins">Example Text</span>
         </div>
       </div>
     </div>

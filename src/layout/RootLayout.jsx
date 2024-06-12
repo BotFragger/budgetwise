@@ -29,7 +29,7 @@ function RootLayout () {
               </svg>
             </button>
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row rtl:space-x-reverse md:mt-0">
                 <li>
                   <Link to="/" className="mx-6 px-3 py-2 block font-bold text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#EE946B] md:p-0 dark:text-white md:dark:hover:text-[#EE946B] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</Link>
                 </li>

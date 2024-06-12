@@ -10,6 +10,7 @@ import ResultPage from '../pages/ResultPage'
 import SuggestPage from '../pages/SuggestPage'
 import RootLayout from '../layout/RootLayout'
 import WordPage from '../pages/WordPage'
+// import ResultPage from '../pages/ResultPage'
 
 function AppRoutes () {
   return (
@@ -21,6 +22,7 @@ function AppRoutes () {
         <Route path='budgets' element={<BudgetPage />}>
           <Route path=':id' element={<SuggestPage/>}/>
         </Route>
+        <Route path='result' element={<ResultPage/>}/>
         <Route path='word' element={<WordPage/>}/>
       </Route>
       <Route path='*' element={<ErrorPage />}/>

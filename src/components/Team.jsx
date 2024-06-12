@@ -8,7 +8,7 @@ export default function Team () {
     <div className='flex flex-wrap items-center justify-center gap-8 bg-TIM'>
       <div className='flex flex-col justify-center items-center h-screen'>
         <div className='flex mx-auto justify-center items-center'>
-          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-3 gap-6 mx-4">
+          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-2 gap-6 mx-4">
             <figure className="flex justify-center items-center rounded-2xl">
                 <img src={image.avatar2} alt="Card Preview" className="rounded-2xl"/>
             </figure>
@@ -19,7 +19,7 @@ export default function Team () {
       </div>
       <div className='flex flex-col justify-center items-center h-screen'>
         <div className='flex mx-auto justify-center items-center'>
-          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-3 gap-6 mx-4">
+          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-2 gap-6 mx-4">
             <figure className="flex justify-center items-center rounded-2xl">
                 <img src={image.avatar} alt="Card Preview" className="rounded-2xl "/>
             </figure>
@@ -30,7 +30,7 @@ export default function Team () {
       </div>
       <div className='flex flex-col justify-center items-center h-screen'>
         <div className='flex mx-auto justify-center items-center'>
-          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-3 gap-6 mx-4">
+          <div className="flex flex-col rounded-2xl w-64 bg-[#ffffff] shadow-xl p-2 gap-6 mx-4">
             <figure className="flex justify-center items-center rounded-2xl">
                 <img src={image.avatar3} alt="Card Preview" className="rounded-2xl "/>
             </figure>
