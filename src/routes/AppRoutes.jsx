@@ -7,7 +7,7 @@ import HistoryPage from '../pages/HistoryPage'
 import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
 import ResultPage from '../pages/ResultPage'
-import SuggestPage from '../pages/SuggestPage'
+// import SuggestPage from '../pages/SuggestPage'
 import RootLayout from '../layout/RootLayout'
 import WordPage from '../pages/WordPage'
 // import ResultPage from '../pages/ResultPage'
@@ -20,9 +20,9 @@ function AppRoutes () {
         <Route path='login' element={<LoginPage />}/>
         <Route path='register' element={<RegisterPage />}/>
         <Route path='budgets' element={<BudgetPage />}>
-          <Route path=':id' element={<SuggestPage/>}/>
+          <Route path=':id' element={<ResultPage/>}/>
         </Route>
-        <Route path='result' element={<ResultPage/>}/>
+        {/* <Route path='result' element={<ResultPage/>}/> */}
         <Route path='word' element={<WordPage/>}/>
       </Route>
       <Route path='*' element={<ErrorPage />}/>
