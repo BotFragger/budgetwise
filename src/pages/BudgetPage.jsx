@@ -8,16 +8,26 @@ import { useNavigate } from 'react-router-dom'
 import RectangleInput from '../components/RectangleInput'
 import RectangleInput2 from '../components/RectangleInput2'
 
-function BudgetPage() {
+function BudgetPage () {
   const navigate = useNavigate()
-  const [session] = useAtom(sessionStore)
+  const [session, setSession] = useAtom(sessionStore)
+
+  // useEffect(() => {
+  //   if (!session) {
+  //     navigate('/login')
+  //     alert('Please login to access the features!')
+  //   }
+  // }, [session, navigate])
 
   useEffect(() => {
-    if (!session) {
+    const storedToken = localStorage.getItem('accessToken')
+    if (!storedToken) {
       navigate('/login')
       alert('Please login to access the features!')
+    } else {
+      setSession(storedToken)
     }
-  }, [session, navigate])
+  }, [session, navigate, setSession])
 
   return (
     <>
